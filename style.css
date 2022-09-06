@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Lucida Console;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #363333;
+}
+
+.計算機 {
+    position: relative;
+    width: 300px;
+    min-width: 350px;
+    min-height: 350px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5), -15px -15px 20px #595352
+}
+
+.内容 {
+    position: relative;
+    display: grid;
+}
+
+.計算機 .value {
+    position: relative;
+    grid-column: span 5;
+    user-select: none;
+    overflow: none;
+    /*text-align: center;*/
+    /*text-align: start;*/
+    text-align: end;
+    background: #363333;
+    color: #ed815a;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    font-size: 30px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+}
+
+.計算機 span {
+    position: relative;
+    padding: 10px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #f59a8a;
+    border: 5px solid #4445;
+    border-radius: 10px;
+}
+
+.計算機 span:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #000;
+    color: #ed815a;
+}
+
+.計算機 span#全部清除 {
+    grid-column: span 2;
+    color: red;
+}
+
+.計算機 span#退格 {
+    grid-column: span 3;
+    color: whitesmoke;
+} 
+
+.計算機 span#等於 {
+    color: greenyellow;
+}
+
+.計算機 span#彩蛋 {
+    grid-column: span 2;
+    background: #ed4434;
+}
