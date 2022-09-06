@@ -14,4 +14,4 @@ function 等於()
 }
 
 const 彩蛋 = new Audio();
-彩蛋.src = 'audio/quack_5.mp3';
+彩蛋.src = 'quack_5.mp3';
